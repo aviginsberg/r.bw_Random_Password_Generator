@@ -1,0 +1,4 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteCond $1 !-d
+RewriteRule ^(\w{1,2})/?$  index.php?len=$1 [L]
